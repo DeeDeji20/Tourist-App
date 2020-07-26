@@ -38,50 +38,65 @@ li {
     
     
 }
-
-
 .contact {
-    float:right;
-    width:32%;
-    text-align: center;
-   /* border:2px solid grey; */
-    padding:40px 10px 20px 10px;
+   /* border: 1px solid blue; */
+    color:white;
+    
+    position:absolute;
+    top: 25%;
+    margin:0;
+    
+    left:3%;
+    
 }
+
+
 .container {
     
-    background-image: url("https://res.cloudinary.com/munirat96/image/upload/v1595375967/new%20contact.jpg");
+   background-image: url('https://okanaganhomes.com/wp-content/uploads/2019/05/contact-us.jpg');
     background-repeat:no-repeat;
     background-size: cover;
    /* border:1px solid black; */
-    height:450px;
+    height:400px;
     background-position: center;
-    padding:60px 10px 20px 10px;
-
+   /* padding:60px 10px 20px 10px; */
+    position:relative;
 }
 .size {
 width:90%;
 }
 
-legend {
+/*legend {
     font-weight: bold;
     color:black;
     text-shadow: 2px 2px 4px white;
     font-size:25px;
-}
+} */
 label {
     font-size:15px;
     padding-bottom: 15px;
+    text-align: justify;
+    letter-spacing: 2px;
 }
-input {
-    width:35%;
+input,textarea{
+    max-height: fit-content;
     border-radius:4px;
+    background-color: #49493d;
+    max-width: fit-content;
 }
-textarea {
+::placeholder {
+ color: gray;
+ text-align: center;
+}
+input:hover,textarea:hover {
+    background-color: #d6d951;
+}
+/*textarea {
     width: 45%;
     height: 60px;
     border-top-right-radius: 25px;
     border-radius: 10px;
-}
+} */
 button:hover {
       background-color:#d6d951;
       color:white;
@@ -98,6 +113,7 @@ button {
     position:relative;
     
 }
+
 .shift {
     position:absolute;
     top:50%;
@@ -123,9 +139,13 @@ text-align: center;
 footer.span {
     display:flex;
     padding-top: 17px;
+    font-size: 15px;
+
 }
 span {
     display:inline-flex;
     justify-content: space-between;
     padding-right: 15px;
+    letter-spacing: 1px;
+    color:#413D2E;
 }
