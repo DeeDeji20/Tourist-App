@@ -1,0 +1,71 @@
+body{
+    background-color: #413d2e;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    color:whitesmoke;
+}
+.container {
+    background-image: url("https://ocdn.eu/pulscms-transforms/1/y01k9kqTURBXy8zYWQ0OGI1NzM2OWE2MTM2NjM0ZjEzN2IwOGVkYWNlZC5qcGVnkpUDAB_NAjLNATyVAs0DBwDDw4KhMAGhMQE");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position:relative;
+   min-height:  500px;
+   text-shadow:#d6d951;
+   
+   
+}
+.in-text {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.in-text>button {
+    margin-left:50px;
+    border-radius: 5px;
+
+}
+.in-text>button:hover {
+    color:white;
+    background-color: #d6d951;
+
+}
+.abt {
+    text-align: center;
+    word-spacing: 1px;
+    text-shadow: #d6d951;
+    color:white;
+    font-size: 19px;
+}
+.services {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    color:black;
+    padding-top:13px;
+
+}
+.services>div {
+    width: 30%;
+    background-color: transparent;
+  /*  background-color: whitesmoke;
+    color:black; */
+    
+}
+.fas {
+    font-size: 35px;
+    color:#d6d951;
+}
+@media screen and (max-width: 480px) {
+    .services {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
