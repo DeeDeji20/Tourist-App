@@ -4,6 +4,58 @@ body{
     font-family: 'Montserrat';
     color:whitesmoke;
 }
+
+/*NAVBAR*/
+
+/*NAVBAR*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 15vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo{
+    color: rgb(226,226,226);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.nav-links{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    list-style-type: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(226,226,226);
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+ .burger div {
+     width: 25px;
+     height: 3px;
+     background-color: rgb(226,226,226);
+     margin: 5px;
+ }
+
+ /*END OF NAVBAR*/
+
+
 .container {
     background-image: url("https://ocdn.eu/pulscms-transforms/1/y01k9kqTURBXy8zYWQ0OGI1NzM2OWE2MTM2NjM0ZjEzN2IwOGVkYWNlZC5qcGVnkpUDAB_NAjLNATyVAs0DBwDDw4KhMAGhMQE");
     background-size: cover;
@@ -12,9 +64,8 @@ body{
     position:relative;
    min-height:  500px;
    text-shadow:#d6d951;
-   
-   
 }
+
 .in-text {
     position: absolute;
     top:50%;
@@ -22,6 +73,7 @@ body{
     transform: translate(-50%,-50%);
     text-align: center;
 }
+
 .in-text>button {
     margin-left:50px;
     border-radius: 5px;
@@ -62,6 +114,73 @@ body{
     font-size: 35px;
     color:#d6d951;
 }
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width: 1024px) {
+    
+    .nav-links{
+         width: 60%;
+     }
+ }
+
+ @media screen and (max-width: 768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+     .nav-links{
+         position: absolute;
+         right: 0px;
+         height: 92vh;
+         top: 8vh;
+         background-color: #5d4954;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         width: 50%;
+         transform: translateX(100%);
+         transition: transform 0.5s ease-in;
+     }
+
+    /* .nav-links li {
+        opacity: 0;
+     }*/
+
+     .burger{
+         display: block;
+     }
+ }
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2{
+   opacity: 0;
+}
+
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
 @media screen and (max-width: 480px) {
     .services {
         flex-direction: column;
@@ -69,3 +188,4 @@ body{
         align-items: center;
     }
 }
+
