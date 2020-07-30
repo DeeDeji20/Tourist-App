@@ -328,7 +328,7 @@ nav{
 /*START OF SECTION: LATEST PHOTOS*/
 
 .photos{
-    margin: 8% auto;
+    margin: 8% auto 2% auto;
     height: 50vh;
     width: 100vw;
 }
@@ -371,7 +371,36 @@ nav{
 
 /*START OF FOOTER*/
 
+.bottom {
+    background-color: black;
+    height: 40vh;
+    margin-bottom: 0;
+}
 
+.footers{
+    display: grid;
+    grid-gap: 2%;
+    padding: 3% 0;
+    width: 80vw;
+    margin: auto;
+    color: blanchedalmond;
+    grid-template-columns: repeat(4, 1fr);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.footers h3{
+   margin: 4% auto;
+}
+
+.footers p {
+    line-height: 2em;
+}
+
+.footers a{
+    text-decoration: none;
+    color: #d6d951;
+}
 
 
 
