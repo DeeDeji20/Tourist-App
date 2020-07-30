@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+body{
+    margin: 0;
+}
 
 /*NAVBAR*/
 nav{
@@ -61,10 +64,92 @@ nav{
      background-repeat: no-repeat;
      background-size: cover;
  }
+ 
 
+ .connect{
+     width: 69vw;
+     margin: 3% auto;
+     color: #fff;
+ }
 
+ .con h3{
+     display: inline-block;
+ }
 
+ .con a {
+    text-decoration: none;
+    letter-spacing: 3px;
+    margin-top: 5%;
+    font-size: 20px; 
+    font-weight: bold;
+    color: rgb(226,226,226);
+}
 
+.detail{
+    width: 80vw;
+    margin: 3% auto;
+}
+
+.detail h1{
+    margin: 2% auto;
+    letter-spacing: 2px;
+    font-size: 2.5em;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+}
+
+.item{
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 1.6%;
+}
+
+#boli {
+    background-color: #413D2e;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+}
+
+#boli:hover {
+    background-color: #d6d951;
+    color: black;
+}
+
+/*FOOTER*/
+ .bottom {
+    background-color: black;
+    height: 30vh;
+    margin-bottom: 0;
+}
+
+.footers{
+    display: grid;
+    grid-gap: 2%;
+    width: 80vw;
+    margin: auto;
+    color: blanchedalmond;
+    grid-template-columns: repeat(4, 1fr);
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.footers h3{
+   margin: 8% auto;
+
+}
+
+.footers p {
+    line-height: 2em;
+}
+
+.footers a{
+    text-decoration: none;
+    color: #d6d951;
+}
 
  /*MEDIA QUERIES*/
  @media screen and (max-width: 1024px) {
