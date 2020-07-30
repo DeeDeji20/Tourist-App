@@ -55,8 +55,8 @@ nav{
 
  /*LANDING PAGE IMAGE*/
  .grow {
-     background-image: url('img/Kal.jpg');
-     height: 100vh;
+     background-image: url('https://res.cloudinary.com/betty/image/upload/v1595988051/samples/Tourano/sea-1337565_1920_qzbppa.jpg');
+     height: 75vh;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
@@ -99,9 +99,8 @@ nav{
 
  #pic1 {
     grid-column: 1/ span 1.5 ;
-    border: 2px solid red;
     grid-template-rows: 0.4em;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988050/samples/Tourano/brown-rock-on-cliff-2418673_vy4mho.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,9 +108,8 @@ nav{
 
  #pic2 {
     grid-column: 2/ span 1 ;
-    border: 2px solid red;
     grid-template-rows: 0.5em;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -119,9 +117,8 @@ nav{
 
  #pic3 {
     grid-column: 1 / span 2;
-    border: 2px solid red;
     grid-template-rows: 5em;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +128,7 @@ nav{
 /*THIRD SECTION: CATEGORIES*/
 
 .category{
-    background-image: url(img/coconut.jpg);
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -195,40 +192,37 @@ nav{
 }
 
 .trend1{
-    border: 2px solid red;
     grid-column: 1/3;
     grid-row: 1/3;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .trend2{
-    border: 2px solid red;
     grid-column: 3/4;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988068/samples/Tourano/drinks-on-bar-2225580_d0eqax.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .trend3{
-    border: 2px solid red;
     grid-column: 4/5;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .trend4{
-    border: 2px solid red;
     grid-column: 3/5;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990953/samples/Tourano/restaurant-3597677_1920_rp2dl5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #ccc;
 }
 
 /*END OF SECTION: TRENDING*/
@@ -258,8 +252,7 @@ nav{
 }
 
 .test2{
-    border: 2px solid red;
-    background-image: url();
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595992715/samples/Tourano/man-1868730_1920_wjafgz.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
