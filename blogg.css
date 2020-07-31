@@ -408,6 +408,9 @@ nav {
         text-align: left;
     }
     @media (max-width:812px) {
+        body {
+            overflow-x: hidden;
+        }
         .container {
             display: flex;
             flex-direction: column;
@@ -432,6 +435,8 @@ nav {
         .user {
             display: flex;
             flex-direction: column;
+            width: 80vw;
+            margin: 0 auto;
         }
         .user h3 {
             margin-top: 10px;
@@ -443,7 +448,7 @@ nav {
             padding: 10px;
         }
         .person {
-            margin-left: 40px;
+            margin-left: 80px;
             height: 8rem;
             width: 8rem;
         }
@@ -496,16 +501,16 @@ nav {
         .footers {
             display: grid;
             margin: auto;
-            grid-template-columns: 300px auto;
-            grid-gap: 5px;
-            letter-spacing: 2px;
+            grid-template-columns: 200px auto;
+            grid-gap: 10px;
+            letter-spacing: 1px;
             text-align: left;
         }
         .phone-size {
-            display: inline-block;
+            display: block;
         }
         .phone {
-            margin-right: 10px;
+            margin-right: 4px;
         }
         .footer4 {
             display: none;
