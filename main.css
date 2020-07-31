@@ -51,16 +51,54 @@ nav{
      margin: 5px;
  }
 
+
  /*END OF NAVBAR*/
 
- /*LANDING PAGE IMAGE*/
+ /*LANDING PAGE*/
  .grow {
      background-image: url('https://res.cloudinary.com/betty/image/upload/v1595988051/samples/Tourano/sea-1337565_1920_qzbppa.jpg');
-     height: 75vh;
+     border: 2px solid red;
+     height: 80vh;
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
  }
+
+ .land{
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    width: 80vw;
+    grid-gap: 2%;
+    line-height: 40px;
+    margin: 4% auto;
+    border: 2px solid red;
+}
+
+.land h2{
+    margin-bottom: 5%;
+}
+
+.land .lady{
+       width: 55%;
+       border-radius: 10px;
+       padding: 2%;
+       margin-bottom: 1.6%;
+}
+
+.land #lady2{
+    width: 30%;
+    background-color: #413D2E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#lady2:hover {
+    background-color: #d6d951;
+    color: black;
+}
+
+/*END OF LANDING PAGE*/
 
 
  /*SECOND SECTION: OWNER*/
@@ -100,6 +138,7 @@ nav{
  #pic1 {
     grid-column: 1/ span 1.5 ;
     grid-template-rows: 0.4em;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988050/samples/Tourano/brown-rock-on-cliff-2418673_vy4mho.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -109,6 +148,7 @@ nav{
  #pic2 {
     grid-column: 2/ span 1 ;
     grid-template-rows: 0.5em;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -118,6 +158,7 @@ nav{
  #pic3 {
     grid-column: 1 / span 2;
     grid-template-rows: 5em;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -129,6 +170,7 @@ nav{
 
 .category{
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
+    border: 2px solid red;
     height: 80vh;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,7 +181,7 @@ nav{
 #categories{
     margin: auto;
     width: 80vw;
-    color: #fff;
+    color: #413D2E;
 }
 
 #categories h4{
@@ -194,6 +236,7 @@ nav{
 .trend1{
     grid-column: 1/3;
     grid-row: 1/3;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -202,6 +245,7 @@ nav{
 
 .trend2{
     grid-column: 3/4;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988068/samples/Tourano/drinks-on-bar-2225580_d0eqax.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -210,6 +254,7 @@ nav{
 
 .trend3{
     grid-column: 4/5;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -218,6 +263,7 @@ nav{
 
 .trend4{
     grid-column: 3/5;
+    border: 2px solid red;
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990953/samples/Tourano/restaurant-3597677_1920_rp2dl5.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -253,6 +299,7 @@ nav{
 
 .test2{
     background-image: url(https://res.cloudinary.com/betty/image/upload/v1595992715/samples/Tourano/man-1868730_1920_wjafgz.jpg);
+    border: 2px solid red;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -435,6 +482,18 @@ nav{
      .burger{
          display: block;
      }
+ }
+
+ @media screen and (max-width: 468px) {
+    .land{
+        font-size: 10px;
+        line-height: 20px;
+        grid-template-columns: 1.6fr 0.4fr;
+    }
+
+    #one{
+       grid-column: 2 fr;
+    }
  }
 
 .nav-active {
