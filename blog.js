@@ -1,4 +1,4 @@
-// JAvascript to show more
+// Javascript to show more
 const button = document.querySelector("#btn1");
 const blog = document.querySelector('#blog1');
 button.addEventListener('click', () => {
@@ -87,3 +87,28 @@ bigBtn.addEventListener('click', () => {
         window.location = './nextPage.html'
     }
 })
+
+
+
+const navigate = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li')
+
+    burger.addEventListener('click', () => {
+        //To Toggle Nav
+        nav.classList.toggle('nav-active');
+
+        //To Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 1s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        burger.classList.toggle('toggle');
+    });
+}
+
+navigate();
