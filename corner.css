@@ -122,14 +122,14 @@ nav{
 /*FOOTER*/
  .bottom {
     background-color: black;
-    height: 40vh;
-    margin-bottom: 0;
+    height: 50vh;
+    margin: 0;
 }
 
 .footers{
     display: grid;
     grid-gap: 2%;
-    padding: 3% 0;
+    padding: 4% 0;
     width: 80vw;
     margin: auto;
     color: blanchedalmond;
