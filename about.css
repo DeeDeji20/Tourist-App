@@ -61,7 +61,7 @@ nav {
 /*END OF NAVBAR*/
 
 .container {
-    background-image: url("./img/coconut.jpg");
+    background-image: url("./img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -75,6 +75,10 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+.offer i {
+    padding-top: 20px;
 }
 
 .in-text>button {
