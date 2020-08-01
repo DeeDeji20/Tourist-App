@@ -1,7 +1,9 @@
 *{
     margin: 0px;
+    
     padding: 0px;
     box-sizing: border-box;
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -116,7 +118,7 @@ nav{
  }
 
  #one {
-     margin-top: 10%;
+     padding-top: 10%;
  }
 
  #read{
@@ -255,13 +257,14 @@ nav{
     margin: 3% auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 35em;
+    height: 80vh;
     background-color: #b0e0e6;
 }
 
 .test1{
     width: 80%;
-    margin: 12% auto;
+    padding: 9% 0;
+    margin: auto;
 }
 
 .test1 blockquote{
@@ -273,11 +276,13 @@ nav{
     margin-left: 7%;
 }
 
-.test2{
-    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595992715/samples/Tourano/man-1868730_1920_wjafgz.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.test2 {
+    overflow: hidden;
+}
+
+.test2 img{
+    height: 100%;
+    object-fit: cover;
 }
 
 /*END OF SECTION: TESTIMONIAL*/
@@ -421,8 +426,6 @@ nav{
     margin-right: 10px;
 }
 
-
-
 /*END OF FOOTER*/
 
 
@@ -443,13 +446,13 @@ nav{
      .nav-links{
          position: absolute;
          right: 0px;
-         height: 92vh;
+         height: 72vh;
          top: 8vh;
-         background-color: #5d4954;
+         background-color: #413D2E;
          display: flex;
          flex-direction: column;
          align-items: center;
-         width: 50%;
+         width: 40%;
          transform: translateX(100%);
          transition: transform 0.5s ease-in;
      }
@@ -484,7 +487,9 @@ nav{
 
      .container{
          grid-template-columns: 1fr;
-         height: 150vh;
+         height: auto;
+         overflow: hidden;
+         padding-bottom: 20px;
      }
 
      #two {
@@ -492,7 +497,7 @@ nav{
      }
 
      .category{
-         height: 180vh;
+         height: auto;
          margin-bottom: 8%;
      }
 
@@ -524,9 +529,26 @@ nav{
 
      .testimonial{
         grid-template-columns: 1fr;
-        grid-template-rows: 22em; 
+        grid-template-rows: auto; 
+        height: auto;
         grid-gap: 10px;
         }
+
+    .test2 img {
+        height: auto;
+        width: 100%;
+    }
+
+    .blog{
+       height: auto;
+        
+    }
+
+    .blogger{
+        grid-template-columns: 1fr;
+        grid-template-rows: 28em;
+        height: auto;
+    }
 
  }
 

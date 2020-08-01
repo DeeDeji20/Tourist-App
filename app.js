@@ -50,3 +50,8 @@ ladyBug.addEventListener('click', ($event) => {
 })
 
 
+
+
+const growth = async () => {
+    fetch()
+}
