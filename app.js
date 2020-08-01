@@ -20,3 +20,33 @@ const navigate = () => {
 }
 
 navigate();
+
+const condar = document.getElementById('condar');
+const item = document.querySelectorAll('item');
+const boli = document.getElementById('boli');
+const formality = document.getElementById('formality');
+
+boli.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    alert('Form Submitted Successfully');
+    formality.reset();
+});
+
+/*const search = document.getElementById('search');
+const lady = document.getElementById('lady2');
+
+lady.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    search.reset();
+});*/
+
+const searchBox = document.getElementById('search');
+const ladyBug = document.getElementById('lady2');
+
+ladyBug.addEventListener('click', ($event) => {
+    $event.preventDefault();
+    alert('Form Submitted Successfully');
+    searchBox.reset();
+})
+
+
