@@ -278,10 +278,14 @@ nav {
         background-color: #e6d6cb;
         color: black;
         margin-bottom: 20px;
-        height: 25vh;
+        padding-bottom: 25px;
+        height: 30vh;
     }
     .in-text {
         top: 35%;
+    }
+    .offer i {
+        padding-top: 20px;
     }
     .burger {
         display: block;
