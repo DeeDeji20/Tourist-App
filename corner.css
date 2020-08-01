@@ -154,6 +154,10 @@ nav{
     color: #d6d951;
 }
 
+.footer4 .icon {
+    margin-right: 10px;
+}
+
  /*MEDIA QUERIES*/
  @media screen and (max-width: 1024px) {
     
