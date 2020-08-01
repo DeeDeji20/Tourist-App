@@ -523,11 +523,10 @@ nav{
      }
 
      .testimonial{
-         grid-template: 20em/1fr;
-     }
-     .test2 {
-         grid-template: 20em/1fr;
-     }
+        grid-template-columns: 1fr;
+        grid-template-rows: 22em; 
+        grid-gap: 10px;
+        }
 
  }
 
