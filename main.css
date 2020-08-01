@@ -1,10 +1,14 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-nav{
+
+/*NAVBAR*/
+
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,14 +16,14 @@ nav{
     font-family: 'Montserrat', sans-serif;
 }
 
-.logo{
-    color: rgb(226,226,226);
+.logo {
+    color: rgb(226, 226, 226);
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
     width: 30%;
     justify-content: space-around;
@@ -32,9 +36,9 @@ nav{
 .nav-links a {
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
-    color: rgb(226,226,226);
+    color: white;
 }
 
 .burger {
@@ -42,80 +46,608 @@ nav{
     cursor: pointer;
 }
 
- .burger div {
-     width: 25px;
-     height: 3px;
-     background-color: rgb(226,226,226);
-     margin: 5px;
- }
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(226, 226, 226);
+    margin: 5px;
+}
 
- .grow {
-     background-image: url('img/Kal.jpg');
-     height: 100vh;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
 
- @media screen and (max-width: 1024px) {
-    
-    .nav-links{
-         width: 60%;
-     }
- }
+/*END OF NAVBAR*/
 
- @media screen and (max-width: 768px) {
 
-    body{
+/*LANDING PAGE*/
+
+.grow {
+    background-image: url('https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg');
+    height: 80vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.land {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    width: 80vw;
+    grid-gap: 2%;
+    line-height: 40px;
+    margin: 4% auto;
+}
+
+.land h2 {
+    margin-bottom: 5%;
+    color: white;
+}
+
+.land .lady {
+    width: 55%;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 1.6%;
+    border: none;
+}
+
+.land #lady2 {
+    width: 30%;
+    background-color: #413D2E;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#lady2:hover {
+    background-color: #d6d951;
+    color: black;
+}
+
+
+/*END OF LANDING PAGE*/
+
+
+/*SECOND SECTION: OWNER*/
+
+.owner {
+    width: 80%;
+    margin: 5% auto 3% auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    height: 65vh;
+}
+
+#one {
+    margin-top: 10%;
+}
+
+#read {
+    border-radius: 4px;
+    padding: 20px;
+    background-color: #413D2E;
+    color: #fff;
+    border: none;
+}
+
+#read:hover {
+    padding: 25px;
+    cursor: pointer;
+    background-color: #d6d951;
+    color: black;
+}
+
+#two {
+    display: grid;
+    grid-gap: 1%;
+    padding-bottom: 20px;
+}
+
+#pic1,
+#pic2,
+#pic3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#pic1 {
+    grid-column: 1/ span 1.5;
+    grid-template-rows: 0.4em;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988050/samples/Tourano/brown-rock-on-cliff-2418673_vy4mho.jpg);
+}
+
+#pic2 {
+    grid-column: 2/ span 1;
+    grid-template-rows: 0.5em;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
+}
+
+#pic3 {
+    grid-column: 1 / span 2;
+    grid-template-rows: 6em;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
+}
+
+
+/*END OF SECTION: OWNER*/
+
+
+/*THIRD SECTION: CATEGORIES*/
+
+.category {
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
+    height: 85vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3%;
+}
+
+#categories {
+    margin: auto;
+    width: 80vw;
+    color: black;
+}
+
+#categories h4 {
+    padding-top: 5%;
+}
+
+#categories2 h1 {
+    margin-top: 10%;
+}
+
+#categories2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 16em;
+    grid-gap: 2%;
+    margin-top: 2%;
+}
+
+#place1,
+#place2,
+#place3,
+#place4 {
+    text-align: center;
+    background-color: #b0e0e6;
+}
+
+
+/*END OF SECTION: CATEGORIES*/
+
+
+/*START OF SECTION: TRENDING*/
+
+.trending {
+    margin-top: 2%;
+    height: 80vh;
+    margin: auto;
+    width: 80%;
+}
+
+.trend {
+    display: grid;
+    grid-gap: 0.5%;
+    height: 80%;
+}
+
+.trend1,
+.trend2,
+.trend3,
+.trend4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.trend1 {
+    grid-column: 1/3;
+    grid-row: 1/3;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990958/samples/Tourano/adventure-clean-clear-enjoyment-261388_ng3seo.jpg);
+}
+
+.trend2 {
+    grid-column: 3/4;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988068/samples/Tourano/drinks-on-bar-2225580_d0eqax.jpg);
+}
+
+.trend3 {
+    grid-column: 4/5;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595988526/samples/Tourano/beach-1867590_1920_pc8hx8.jpg);
+}
+
+.trend4 {
+    grid-column: 3/5;
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595990953/samples/Tourano/restaurant-3597677_1920_rp2dl5.jpg);
+}
+
+
+/*END OF SECTION: TRENDING*/
+
+
+/*START OF SECTION: TESTIMONIAL*/
+
+.testimonial {
+    margin: 3% auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 35em;
+    background-color: #b0e0e6;
+}
+
+.test1 {
+    width: 80%;
+    margin: 12% auto;
+}
+
+.test1 blockquote {
+    margin: 2.5% 0;
+    line-height: 2em;
+}
+
+.test1 p {
+    margin-left: 7%;
+}
+
+.test2 {
+    background-image: url(https://res.cloudinary.com/betty/image/upload/v1595992715/samples/Tourano/man-1868730_1920_wjafgz.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*END OF SECTION: TESTIMONIAL*/
+
+
+/*START OF SECTION: BLOG */
+
+.blog {
+    width: 80%;
+    margin: 5% auto;
+    height: 70vh;
+}
+
+.blogger {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25em;
+    grid-gap: 2%;
+}
+
+.blogger img {
+    height: 14em;
+    width: 22em;
+}
+
+.blogger h4 {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.blogger p {
+    text-align: center;
+    margin-top: 3%;
+}
+
+.blogger button {
+    color: white;
+    position: relative;
+    margin-top: 1%;
+}
+
+.post1,
+.post2,
+.post3 {
+    background-color: #ccc;
+}
+
+.read {
+    border-radius: 4px;
+    padding: 10px;
+    background-color: #413D2E;
+    color: #fff;
+    border: none;
+    margin-left: 37%;
+}
+
+.read:hover {
+    padding: 15px;
+    cursor: pointer;
+    background-color: #d6d951;
+    color: black;
+}
+
+
+/*END OF SECTION: BLOG*/
+
+
+/*START OF SECTION: LATEST PHOTOS*/
+
+.photos {
+    margin: 5% auto 2% auto;
+    height: 50vh;
+    width: 100%;
+}
+
+.photos h1,
+.photos h4 {
+    width: 80vw;
+    margin: auto;
+}
+
+.photo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 22em;
+}
+
+.photo1,
+.photo2,
+.photo3,
+.photo4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo1 {
+    background-image: url(img/Kal.jpg);
+}
+
+.photo2 {
+    background-image: url(img/coconut.jpg);
+}
+
+.photo3 {
+    background-image: url(img/rolands-varsbergs-miKmVyq3qhE-unsplash.jpg);
+}
+
+.photo4 {
+    background-image: url(img/Kal.jpg);
+}
+
+
+/*END OF SECTION: LATEST PHOTOS*/
+
+
+/*START OF FOOTER*/
+
+.bottom {
+    background-color: black;
+    height: 50vh;
+    margin-bottom: 0;
+}
+
+.footers {
+    display: grid;
+    grid-gap: 2%;
+    padding: 3% 0;
+    width: 80vw;
+    margin: auto;
+    color: blanchedalmond;
+    grid-template-columns: repeat(4, 1fr);
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.footers h3 {
+    margin: 4% auto;
+}
+
+.footers p {
+    line-height: 2em;
+}
+
+.footers a {
+    text-decoration: none;
+    color: #d6d951;
+}
+
+.footer4 .icon {
+    margin-right: 10px;
+}
+
+
+/*END OF FOOTER*/
+
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
         overflow-x: hidden;
     }
-
-     .nav-links{
-         position: absolute;
-         right: 0px;
-         height: 92vh;
-         top: 8vh;
-         background-color: #5d4954;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         width: 50%;
-         transform: translateX(100%);
-         transition: transform 0.5s ease-in;
-     }
-
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5d4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .testimonial {
+        height: 87vh
+    }
+    .post2,
+    .post3 {
+        display: none;
+    }
+    .footers {
+        display: grid;
+        margin: auto;
+        grid-template-columns: 200px auto;
+        grid-gap: 10px;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    .bottom {
+        background-color: black;
+        height: 80vh;
+        padding-top: 50px;
+    }
+    .phone-size {
+        display: block;
+    }
+    .phone {
+        margin-right: 4px;
+    }
+    .footer4 {
+        display: none;
+    }
     /* .nav-links li {
         opacity: 0;
      }*/
+    .burger {
+        display: block;
+    }
+}
 
-     .burger{
-         display: block;
-     }
- }
+@media screen and (max-width: 468px) {
+    .land {
+        margin-top: 10%;
+        font-size: 10px;
+        line-height: 30px;
+        grid-template-columns: 1.8fr 0.2fr;
+    }
+    .land .lady {
+        width: 55%;
+        padding: 5% 7%;
+        margin-bottom: 1.6%;
+    }
+    .land #lady2 {
+        width: 40%;
+        padding: 4% 5%;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        height: 150vh;
+    }
+    #two {
+        height: 60vh;
+    }
+    .category {
+        height: 180vh;
+        margin-bottom: 8%;
+    }
+    #categories2 {
+        grid-template: 12em/ 1fr;
+        height: 140vh;
+    }
+    .trending {
+        height: 140vh;
+    }
+    .trend1 {
+        grid-column: 1/5;
+        grid-row: 1/3;
+    }
+    .trend2 {
+        grid-column: 1/3;
+    }
+    .trend3 {
+        grid-column: 3/5;
+    }
+    .trend4 {
+        grid-column: 1/5;
+    }
+    .testimonial {
+        grid-template: 20em/1fr;
+    }
+    .test2 {
+        grid-template: 20em/1fr;
+    }
+}
+
+.land #lady2 {
+    width: 40%;
+    padding: 4% 5%;
+}
+
+.container {
+    grid-template-columns: 1fr;
+    height: 150vh;
+}
+
+#two {
+    height: 60vh;
+}
+
+.category {
+    height: 180vh;
+    margin-bottom: 8%;
+}
+
+#categories2 {
+    grid-template: 12em/ 1fr;
+    height: 140vh;
+}
+
+.trending {
+    height: 140vh;
+}
+
+.trend1 {
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+.trend2 {
+    grid-column: 1/3;
+}
+
+.trend3 {
+    grid-column: 3/5;
+}
+
+.trend4 {
+    grid-column: 1/5;
+}
+
+.testimonial {
+    grid-template-columns: 1fr;
+    grid-template-rows: 22em;
+    grid-gap: 10px;
+}
 
 .nav-active {
     transform: translateX(0%);
 }
 
 @keyframes navLinkFade {
-    from{
+    from {
         opacity: 0;
         transform: translateX(50px);
     }
-    to{
+    to {
         opacity: 1;
         transform: translateX(0px);
     }
 }
 
-.toggle .line1{
+.toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.toggle .line2{
-   opacity: 0;
+.toggle .line2 {
+    opacity: 0;
 }
 
-.toggle .line3{
+.toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
